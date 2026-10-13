@@ -48,7 +48,15 @@ document.getElementById('newsForm').addEventListener('submit', e => {
   document.getElementById('newsOk').classList.remove('hidden');
 });
 
-// Smooth scroll
+// Hero vidéo : respect du mode réduit d'animation + reprise lecture
+(function () {
+  const v = document.querySelector('.hero-video');
+  if (!v) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.pause(); return; }
+  const p = v.play();
+  if (p && p.catch) p.catch(() => {});
+})();
+ // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const t = document.querySelector(a.getAttribute('href'));

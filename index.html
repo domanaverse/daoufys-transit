@@ -63,7 +63,16 @@
 
 <!-- HERO -->
 <section id="accueil" class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+      poster="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2000&auto=format&fit=crop">
+      <!-- 1) Votre vidéo locale : déposez un fichier hero.mp4 dans ce dossier -->
+      <source src="hero.mp4" type="video/mp4">
+      <!-- 2) Vidéo d'ambiance maritime (Pexels, libre de droits) -->
+      <source src="https://videos.pexels.com/video-files/1093662/1093662-hd_1920_1080_30fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
   <div class="container hero-grid">
     <div class="hero-content">
       <div class="badge"><i class="fa-solid fa-anchor"></i> Transitaire agréé — Depuis Agadir pour le monde</div>
