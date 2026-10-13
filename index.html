@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daoufys Transit — L'architecte de votre logistique internationale | Agadir - Maroc</title>
+<meta name="description" content="Daoufys Transit, transitaire agréé N°1426 à Agadir. Dédouanement, transport routier, logistique & stockage depuis Agadir pour le monde. Devis gratuit en 5 min.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚢</text></svg>">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <span><i class="fa-solid fa-location-dot"></i> Agadir — Casablanca — Dakhla</span>
+      <span class="hide-mobile"><i class="fa-solid fa-phone"></i> +212 528 292 533</span>
+    </div>
+    <div class="topbar-right">
+      <span><i class="fa-solid fa-shield-halved"></i> Agréé Douane N° 1426</span>
+      <span class="hide-mobile"><i class="fa-solid fa-clock"></i> Lun – Sam : 08h – 19h</span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container nav">
+    <a href="#accueil" class="logo">
+      <div class="logo-mark"><span>DT</span></div>
+      <div class="logo-text">DAOUFYS<br><em>Transit</em></div>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Accueil</a>
+      <div class="dropdown">
+        <a href="#services">Nos Activités <i class="fa-solid fa-chevron-down small"></i></a>
+        <div class="dropdown-menu">
+          <a href="transitaire-agree.html"><i class="fa-solid fa-ship"></i> Transitaire Agréé N°1426</a>
+          <a href="transport.html"><i class="fa-solid fa-truck-fast"></i> Transport</a>
+          <a href="logistique.html"><i class="fa-solid fa-warehouse"></i> Logistique</a>
+          <a href="import-export.html"><i class="fa-solid fa-right-left"></i> Import / Export</a>
+          <a href="consulting.html"><i class="fa-solid fa-briefcase"></i> Consulting</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="moyens.html">Nos Moyens <i class="fa-solid fa-chevron-down small"></i></a>
+        <div class="dropdown-menu">
+          <a href="moyens.html#rh"><i class="fa-solid fa-users"></i> Ressources Humaines</a>
+          <a href="moyens.html#logistique"><i class="fa-solid fa-forklift"></i> Moyens Logistiques</a>
+        </div>
+      </div>
+      <a href="partenaires.html">Partenaires</a>
+      <a href="societe.html">Société</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Contactez-nous</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="accueil" class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="badge"><i class="fa-solid fa-anchor"></i> Transitaire agréé — Depuis Agadir pour le monde</div>
+      <h1>L'ARCHITECTE DE VOTRE<br>LOGISTIQUE INTERNATIONALE.<br><span>DEPUIS AGADIR POUR LE MONDE.</span></h1>
+      <p class="hero-sub">Daoufys Transit, votre partenaire agréé (N° 1426) pour un dédouanement et transport fiables et performants.</p>
+      <div class="hero-btns">
+        <a href="#devis" class="btn btn-orange">DEMANDER UN DEVIS GRATUIT EN 5 MIN</a>
+        <a href="#services" class="btn btn-ghost"><i class="fa-solid fa-play"></i> Découvrir nos services</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>15+</strong><span>Ans d'expérience</span></div>
+        <div><strong>4 800+</strong><span>Dossiers / an</span></div>
+        <div><strong>98%</strong><span>Dédouanement 48h</span></div>
+      </div>
+    </div>
+    <div class="hero-form-card" id="devis">
+      <h3>Devis gratuit en 5 min</h3>
+      <p>Réponse sous 2h ouvrées par un expert.</p>
+      <form id="quoteForm">
+        <div class="row2">
+          <input type="text" id="qNom" placeholder="Nom complet *" required>
+          <input type="tel" id="qTel" placeholder="Téléphone *" required>
+        </div>
+        <input type="email" id="qEmail" placeholder="Email professionnel *" required>
+        <div class="row2">
+          <select id="qService" required>
+            <option value="">Type de service *</option>
+            <option>Transit & Dédouanement</option>
+            <option>Transport Routier</option>
+            <option>Logistique & Stockage</option>
+            <option>Fret Maritime / Aérien</option>
+            <option>Import / Export complet</option>
+          </select>
+          <select id="qVille">
+            <option value="">Agence</option>
+            <option>Agadir (Siège)</option>
+            <option>Casablanca</option>
+            <option>Dakhla</option>
+          </select>
+        </div>
+        <textarea id="qMsg" rows="3" placeholder="Décrivez votre marchandise : nature, poids, origine / destination..."></textarea>
+        <button type="submit" class="btn btn-orange full">Envoyer ma demande <i class="fa-solid fa-arrow-right"></i></button>
+        <small><i class="fa-solid fa-lock"></i> Vos données restent confidentielles.</small>
+      </form>
+      <div id="quoteSuccess" class="success-msg hidden">
+        <i class="fa-solid fa-circle-check"></i>
+        <h4>Demande envoyée !</h4>
+        <p>Notre équipe vous rappelle sous 2h ouvrées.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES CARDS (maquette) -->
+<section id="services" class="services-overlap">
+  <div class="container cards3">
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-ship"></i></div>
+      <h3>Transit & Dédouanement</h3>
+      <p>Daoufys Transit, votre agréé (N° 1426) pour un dédouanement et transport fiables et performants. Prise en charge BADR, ADII, ONSSA, EACCE.</p>
+      <a href="transitaire-agree.html">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-truck-fast"></i></div>
+      <h3>Transport Routier</h3>
+      <p>Transport routier national et international : groupage, complet, frigorifique et convoi exceptionnel, suivi GPS temps réel.</p>
+      <a href="transport.html">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-warehouse"></i></div>
+      <h3>Logistique & Stockage</h3>
+      <p>Logistique & Stockage : entrepôts sous douane à Agadir & Casa, préparation de commandes, distribution et services 3PL.</p>
+      <a href="logistique.html">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <div class="container" style="text-align:center;margin-top:18px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+    <a href="import-export.html" class="btn btn-primary">Import / Export</a>
+    <a href="consulting.html" class="btn btn-primary">Consulting international</a>
+  </div>
+</section>
+
+<!-- PARTENAIRES -->
+<section class="partners">
+  <div class="container partners-inner">
+    <div class="partner-logos">
+      <span class="plog"><i class="fa-solid fa-anchor"></i> Marsa Maroc</span>
+      <span class="plog"><i class="fa-solid fa-ship"></i> Maersk • MSC • CMA CGM</span>
+      <span class="plog"><i class="fa-solid fa-plane"></i> Royal Air Maroc</span>
+      <span class="plog"><i class="fa-solid fa-landmark"></i> Douane • ONSSA • EACCE</span>
+      <a href="partenaires.html" style="font-size:14px;text-decoration:underline">Tous nos partenaires →</a>
+    </div>
+    <div class="partner-quote">
+      <i class="fa-solid fa-quote-left"></i>
+      <p>Acteur et témoin de longue date des mutations du commerce mondial, DAOUFYS Transit maintient un outil de travail performant autour du transit, du transport et de la logistique. <a href="societe.html"><strong>Mot du Président →</strong></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- DETAIL SERVICES -->
+<section class="details">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Nos expertises</span>
+      <h2>Un guichet unique pour vos flux <span>import & export</span></h2>
+      <p>Ports d'Agadir, Casablanca, Tanger Med & Dakhla — nous gérons tout, du document au dernier kilomètre.</p>
+    </div>
+    <div class="grid4">
+      <div class="feat"><i class="fa-solid fa-file-circle-check"></i><h4>Dédouanement express</h4><p>Déclarations BADR, exonérations, régimes suspensifs, admission temporaire.</p><span>48h chrono</span></div>
+      <div class="feat"><i class="fa-solid fa-container-storage"></i><h4>Fret maritime</h4><p>FCL / LCL, reefer fruits & légumes, négociation armateurs.</p><span>Agadir • Casa • Tanger Med</span></div>
+      <div class="feat"><i class="fa-solid fa-plane-departure"></i><h4>Fret aérien</h4><p>Envois urgents, pièces détachées, échantillons via CMN.</p><span>J+1 Europe</span></div>
+      <div class="feat"><i class="fa-solid fa-boxes-stacked"></i><h4>Entreposage 3PL</h4><p>5 000 m² sous douane, gestion stock, cross-dock, e-commerce.</p><span>WMS temps réel</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+    <div class="section-head light">
+      <span class="eyebrow">Comment ça marche</span>
+      <h2>Votre dossier dédouané en 4 étapes</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h4>Devis en 5 min</h4><p>Formulaire ou WhatsApp, réponse chiffrée sous 2h.</p></div>
+      <div class="step"><div class="num">2</div><h4>Documents</h4><p>Facture, BL/AWB, packing-list, certificats vérifiés.</p></div>
+      <div class="step"><div class="num">3</div><h4>Dédouanement</h4><p>Déclaration douane + passage scanner + mainlevée.</p></div>
+      <div class="step"><div class="num">4</div><h4>Livraison</h4><p>Transport + POD photo, facture claire sans surprise.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MOYENS -->
+<section id="moyens" class="moyens">
+  <div class="container moyens-grid">
+    <div>
+      <span class="eyebrow">Nos moyens</span>
+      <h2>Des moyens humains & matériels à la hauteur</h2>
+      <p>Déclarants agréés en douane, chauffeurs expérimentés, flotte propre et partenaires armateurs de premier rang.</p>
+      <ul class="checklist">
+        <li><i class="fa-solid fa-check"></i> 25 déclarants & logisticiens dédiés</li>
+        <li><i class="fa-solid fa-check"></i> 18 camions + 40 partenaires affrétés</li>
+        <li><i class="fa-solid fa-check"></i> Entrepôts Agadir 3 000 m² + Casa 2 000 m²</li>
+        <li><i class="fa-solid fa-check"></i> Suivi GPS + notifications WhatsApp / Email</li>
+        <li><i class="fa-solid fa-check"></i> Bureaux aux ports : Agadir, Casa, Dakhla</li>
+      </ul>
+      <div class="kpis">
+        <div><strong>12K</strong><span>Conteneurs traités</span></div>
+        <div><strong>350+</strong><span>Clients actifs</span></div>
+        <div><strong>24/7</strong><span>Support urgences</span></div>
+      </div>
+    </div>
+    <div class="moyens-cards">
+      <div class="mcard"><i class="fa-solid fa-truck"></i><h4>Flotte routière</h4><p>Plateaux, frigos, bennes — géolocalisés.</p></div>
+      <div class="mcard"><i class="fa-solid fa-warehouse"></i><h4>Stockage sous douane</h4><p>Magasins agréés ADII, assurance tous risques.</p></div>
+      <div class="mcard"><i class="fa-solid fa-satellite-dish"></i><h4>Tracking digital</h4><p>Portail client : statuts, documents, POD.</p></div>
+      <div class="mcard"><i class="fa-solid fa-people-group"></i><h4>Équipe douane</h4><p>Anciens de la place portuaire d'Agadir.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEMOIGNAGES -->
+<section id="temoignages" class="temoignages">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Témoignages</span>
+      <h2>Ils nous confient leurs flux</h2>
+    </div>
+    <div class="grid3" id="testiGrid">
+      <div class="testi"><div class="stars">★★★★★</div><p>« Conteneur bloqué à Agadir un vendredi soir, mainlevée obtenue lundi matin. Sérieux et réactifs. »</p><div class="author"><strong>S. El Amrani</strong><span>Export fruits & légumes — Agadir</span></div></div>
+      <div class="testi"><div class="stars">★★★★★</div><p>« Dédouanement + livraison Casa en 48h, avec photos à chaque étape. Tarifs clairs, zéro frais caché. »</p><div class="author"><strong>Y. Berrada</strong><span>Import pièces auto — Casablanca</span></div></div>
+      <div class="testi"><div class="stars">★★★★★</div><p>« Notre stock tampon à Dakhla est géré de bout en bout. Le portail de suivi change tout. »</p><div class="author"><strong>M. Laghdaf</strong><span>Distribution — Dakhla</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANDEAU -->
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div><h2>Un conteneur à dédouaner ? Un camion à affréter ?</h2><p>Envoyez votre BL ou facture proforma — devis gratuit sous 2h ouvrées.</p></div>
+    <div class="cta-btns">
+      <a class="btn btn-orange" href="#contact">Demander mon devis</a>
+      <a class="btn btn-white" href="https://wa.me/212600000000" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp direct</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / FOOTER -->
+<footer id="contact">
+  <div class="container footer-grid">
+    <div class="fcol">
+      <h4>Siège — Agadir</h4>
+      <p>Bloc N°13, Cité Dakhla,<br>Agadir — Maroc<br>Tél : +212 528 292 533<br>Fax : +212 528 292 356<br>direction@daoufystransit.com<br>contact@daoufystransit.com</p>
+    </div>
+    <div class="fcol">
+      <h4>Agence Casablanca</h4>
+      <p>Place d'Istiqlal, 5ème étage<br>App. N°501, Esc. Bougain<br>Casablanca<br>Tél : +212 522 543 624<br>Fax : +212 522 543 618</p>
+    </div>
+    <div class="fcol">
+      <h4>Agence Dakhla</h4>
+      <p>Av. Moukaouama N°1-904<br>CP 73000 Oued Eddahab<br>Ed-Dakhla<br>Tél : +212 528 898 478<br>Fax : +212 528 898 459</p>
+    </div>
+    <div class="fcol">
+      <a href="https://www.facebook.com/daoufystransit/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      <a href="https://ma.linkedin.com/in/daoufys-transit-8196ba125" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="https://twitter.com/daoufys1" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i> Twitter</a>
+      <a href="societe.html">Présentation</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="fcol newsletter">
+      <h4>Inscription à la newsletter</h4>
+      <form id="newsForm"><input type="email" placeholder="Votre email" required><button type="submit" class="btn btn-orange">OK</button></form>
+      <p id="newsOk" class="hidden">Merci ! Inscription confirmée.</p>
+      <p class="hours"><i class="fa-solid fa-clock"></i> Lun–Sam : 08h00 – 19h00<br><i class="fa-solid fa-siren"></i> Urgences portuaires : 7j/7</p>
+    </div>
+  </div>
+  <div class="bottombar">
+    <div class="container bottom-inner">
+      <span>© 2026 Daoufys Transit SARL — Agréé Douane N°1426 — Capital 340 000 DHS. Tous droits réservés.</span>
+      <span><a href="societe.html">Société</a> • <a href="contact.html">Contact</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- CHAT -->
+<a class="chat-btn" href="https://wa.me/212528292533" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script src="script.js"></script>
+</body>
+</html>
