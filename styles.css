@@ -180,6 +180,17 @@ footer{background:#eef1f5;padding:44px 0 0;color:#33424f}
 .chat-btn{position:fixed;right:18px;bottom:18px;width:54px;height:54px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:24px;box-shadow:var(--shadow);z-index:60}
 .chat-btn:hover{background:var(--orange)}
 
+/* language selector */
+.lang-selector{display:flex;gap:8px;margin-left:12px}
+.lang-item{display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:20px;font-weight:700;font-size:12px;min-width:32px;text-align:center;transition:.2s}
+.lang-item.fr{background:rgba(255,255,255,.2);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.lang-item.fr:hover{background:rgba(255,255,255,.3)}
+.lang-item.en{background:rgba(255,255,255,.2);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.lang-item.en:hover{background:rgba(255,255,255,.3)}
+.lang-item.es{background:rgba(255,255,255,.2);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.lang-item.es:hover{background:rgba(255,255,255,.3)}
+.lang-item.active{background:var(--orange);color:#fff;}
+
 /* inner pages */
 .page-hero{background:linear-gradient(120deg,rgba(8,47,86,.93),rgba(8,47,86,.65)),url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2000&auto=format&fit=crop') center/cover;color:#fff;padding:56px 0}
 .page-hero h1{font-size:clamp(26px,3.5vw,40px)}

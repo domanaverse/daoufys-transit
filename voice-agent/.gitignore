@@ -1,0 +1,68 @@
+# DAOUFYS Voice Agent — Git Ignore
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.venv/
+venv/
+env/
+ENV/
+
+# UV
+.uv/
+uv.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Docker
+.docker/
+
+# LiveKit
+.livekit/
+
+# Test outputs
+test-results/
+coverage.xml
+
+# Local DB (if using SQLite)
+*.db
+*.sqlite
+
+# Audio/Video recordings
+recordings/
+*.wav
+*.mp4
+*.webm

@@ -1,0 +1,36 @@
+The DAOUFYS TRANSIT voice agent is ready. Key files:
+
+| File                          | Purpose                                                |
+|-------------------------------|--------------------------------------------------------|
+| agent/daoufys_receptionist.py | Main agent — Darija/French, 5 tools, Hermes delegation |
+| config/.env.example           | Template for LiveKit + AI provider keys                |
+| tests/test_agent.py           | Unit tests for all 5 tools                             |
+| pyproject.toml                | Dependencies (livekit-agents 1.8.9, plugins)           |
+| pcc-deploy.toml / Dockerfile  | LiveKit Cloud deploy config                            |
+
+Typical next steps:
+1. Install & test locally:
+   bash
+   cd "C:/Users/viet/Documents/Projet par défaut/daoufys-transit/voice-agent"
+   uv sync --all-extras
+   cp config/.env.example .env
+Edit .env with your keys
+   uv run python -m agent.daoufys_receptionist console
+
+
+2. Run tests:
+   bash
+   uv run pytest tests/ -v
+
+
+3. Deploy to LiveKit Cloud:
+   bash
+   uv tool install livekit-cli
+   lk cloud auth login
+   lk agent deploy
+
+
+4. Add MiniMax TTS (best for Darija) — replace Cartesia in daoufys_receptionist.py:476-480
+
+What do you want to tackle?
+────────────────────────────────────────

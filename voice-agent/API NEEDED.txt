@@ -1,0 +1,24 @@
+### 3. Required Environment Variables
+│ +
+│ +| Variable | Description | Source |
+│ +|----------|-------------|--------|
+│ +| `LIVEKIT_URL` | WebSocket URL (wss://...) | LiveKit Cloud → Project |
+│ +| `LIVEKIT_API_KEY` | API Key | LiveKit Cloud → API Keys |
+│ +| `LIVEKIT_API_SECRET` | API Secret | LiveKit Cloud → API Keys |
+│ +| `DEEPGRAM_API_KEY` | STT (Arabic/Darija) | [deepgram.com](https://deepgram.com) |
+│ +| `OPENAI_API_KEY` | LLM (GPT-4o-mini) | [openai.com](https://openai.com) |
+│ +| `CARTESIA_API_KEY` | TTS (Sonic-3) | [cartesia.ai](https://cartesia.ai) |
+│ +| `MINIMAX_API_KEY` | **TTS Darija (Best)** | [minimax.io](https://minimax.io) |
+│ +| `HERMES_GATEWAY_URL` | Hermes API endpoint | Your Hermes deployment |
+│ +| `HERMES_API_KEY` | Hermes gateway auth | Hermes config |
+│ +
+│ +### 4. Run Locally
+│ +
+│ +```bash
+│ +# Console mode (text + voice in terminal)
+│ +uv run python -m agent.daoufys_receptionist console
+│ +
+│ +# Or with LiveKit CLI
+│ … omitted 294 diff line(s) across 1 additional file(s)/section(s)
+✍️ Write /c/Users/viet/Documents/Projet par défaut/daoufys-transit/voice-agent/tests/test_agent.py  6.2s
+│ Documents\Projet par défaut\daoufys-transit\voice-agent\tests\test_agent.py

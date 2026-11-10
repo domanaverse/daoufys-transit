@@ -1,0 +1,43 @@
+# LiveKit Cloud Deployment Configuration
+# Used by: lk agent deploy
+
+name = "daoufys-receptionist"
+version = "1.0.0"
+
+[build]
+dockerfile = "Dockerfile"
+context = "."
+
+[deploy]
+replicas = 2
+cpu = "1000m"
+memory = "1Gi"
+
+[deploy.env]
+LIVEKIT_URL = { valueFrom = { secretKeyRef = { name = "livekit-credentials", key = "url" } } }
+LIVEKIT_API_KEY = { valueFrom = { secretKeyRef = { name = "livekit-credentials", key = "api_key" } } }
+LIVEKIT_API_SECRET = { valueFrom = { secretKeyRef = { name = "livekit-credentials", key = "api_secret" } } }
+DEEPGRAM_API_KEY = { valueFrom = { secretKeyRef = { name = "ai-provider-keys", key = "deepgram" } } }
+OPENAI_API_KEY = { valueFrom = { secretKeyRef = { name = "ai-provider-keys", key = "openai" } } }
+CARTESIA_API_KEY = { valueFrom = { secretKeyRef = { name = "ai-provider-keys", key = "cartesia" } } }
+MINIMAX_API_KEY = { valueFrom = { secretKeyRef = { name = "ai-provider-keys", key = "minimax" } } }
+HERMES_GATEWAY_URL = "https://hermes-gateway.yourdomain.com"
+HERMES_API_KEY = { valueFrom = { secretKeyRef = { name = "hermes-credentials", key = "api_key" } } }
+LIVEKIT_AGENT_DEPLOYMENT = "production"
+LIVEKIT_AGENT_NAME = "daoufys-receptionist"
+
+[agent]
+name = "daoufys-receptionist"
+
+[agent.dispatch]
+room_prefix = "daoufys-"
+
+[agent.health_check]
+path = "/health"
+port = 8080
+
+[autoscaling]
+min_replicas = 1
+max_replicas = 10
+target_cpu_utilization = 70
+target_memory_utilization = 80
